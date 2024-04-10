@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import '../bin/codility_lesson_1.dart';
+import '../bin/lesson_1.dart';
 
 void main() {
   test('toBinary should return 0 for input 0', () {
