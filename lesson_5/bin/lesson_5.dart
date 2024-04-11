@@ -1,6 +1,6 @@
 void main(List<String> arguments) {
   final datetime = DateTime.now();
-  print(solution(1, 2000000000, 2));
+  print(solution(0, 999999999999999999, 2));
   print(DateTime.now().difference(datetime));
 }
 
@@ -10,8 +10,11 @@ int solution(int A, int B, int K) {
   int count = 0;
   for (int i = A; i <= B; i = i + sum) {
     if (sum != 1) {
-      count++;
-      continue;
+      while (B % K != 0) {
+        B--;
+      }
+      count = count + ((B - A) / K).floor();
+      break;
     }
     if (i % K == 0) {
       count++;
