@@ -1,19 +1,11 @@
 void main(List<String> arguments) {
   var dateTime = DateTime.now();
-  //2
-  print(solution(
-    [7, 20, 2, 5, 1, 3, 8, 9],
-    [0, 1, 0, 1, 0, 0, 0, 0],
-  ));
-
-  //print(solution([7, 3], [1, 0]));
-
-  //print(
-  //  solution(
-  //    List.generate(60000, (index) => index)..shuffle(),
-  //    List.generate(60000, (index) => index % 2 == 0 ? 0 : 1),
-  //  ),
-  //);
+  print(
+    solution(
+      List.generate(5000, (index) => index)..shuffle(),
+      List.generate(5000, (index) => index % 2 == 0 ? 0 : 1),
+    ),
+  );
   print(DateTime.now().difference(dateTime));
 }
 
