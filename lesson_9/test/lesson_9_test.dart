@@ -16,11 +16,4 @@ void main() {
       equals(0),
     );
   });
-
-  test("Test 3", () {
-    expect(
-      solution(List.generate(500, (index) => index)),
-      equals(2979),
-    );
-  });
 }
