@@ -2,7 +2,7 @@ import 'dart:math' as math;
 
 void main(List<String> arguments) {
   final dateTime = DateTime.now();
-  print(solution(List.generate(500, (index) => index)));
+  print(solution([3, 2, 6, -1, 4, 5, -1, 2]));
   print(DateTime.now().difference(dateTime));
 }
 
