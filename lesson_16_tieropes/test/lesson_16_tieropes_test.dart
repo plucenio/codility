@@ -10,7 +10,11 @@ void main() {
     expect(solution(4, [1, 2, 3, 4, 1, 1, 3]), 3);
   });
 
-  test('test 2', () {
+  test('test 3', () {
     expect(solution(4, [1, 2, 3, 4, 1, 1, 3, 2, 4]), 4);
+  });
+
+  test('test 4', () {
+    expect(solution(4, [1]), 0);
   });
 }
